@@ -67,14 +67,14 @@ class Student extends Person {
     }
     listsSubjects() {
         for (let i = 0; i < this.favSubjects.length; i++) {
-            console.log (`${this.name} <3's ${this.favSubjects[i]}`);
+            console.log (`${this.name} likes these subjects: ${this.favSubjects[i]}`);
         }
     }
     PRAssignment(subject) {
         console.log(`${this.name} submitted a PR for ${subject}`);
     }
     sprintChallenge(subject) {
-        console.log(`${this.name} begins working hard on ${subject}`);
+        console.log(`${this.name} has begun sprint challenge on ${subject}`);
     }
 }
 
@@ -104,4 +104,17 @@ class ProjectManager extends Instructor {
     }
 }
 
+/* 
+Stretch Problem
+Extend the functionality of the Student by adding a prop called grade and setting it equal to a number between 1-100.
+Now that our students have a grade build out a method on the Instructor (this will be used by BOTH instructors and PM's) that will randomly add or subtract points to a student's grade. Math.random will help.
+Add a graduate method to a student.
+This method, when called, will check the grade of the student and see if they're ready to graduate from Lambda School
+If the student's grade is above a 70% let them graduate! Otherwise go back to grading their assignments to increase their score.
+*/
+
+/* Nope */ 
+
+
 /* --- */
+
